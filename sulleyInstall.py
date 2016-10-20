@@ -16,7 +16,7 @@ GIT = "https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.
 MINGW_PRECOMPILED_BINARIES = "https://github.com/develersrl/gccwinbinaries/releases/download/v1.1/gcc-mingw-4.3.3-setup.exe"
 UNZIP = "http://stahlworks.com/dev/unzip.exe"
 
-# Devugging
+# Debugging
 PYDBG = "https://github.com/Fitblip/pydbg.git"
 LIBDASM = "https://github.com/alexeevdv/libdasm.git"
 
@@ -50,7 +50,7 @@ print("Downloading unzip\n...\n")
 urllib.urlretrieve(UNZIP, "unzip.exe")
 
 # Add MinGW, Python and git to PATH
-os.environ['PATH'] += ";C:\Python27;C:\MinGW\bin;C:\Program Files\Git\cmd"
+os.environ['PATH'] += ";C:\Python27;C:\MinGW\\bin;C:\Program Files\Git\cmd"       # Seriously fuck \b and this bullshit bug
 
 # Install pydbg
 print("Cloning pydbg\n...")
