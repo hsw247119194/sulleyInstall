@@ -11,7 +11,7 @@ import os
 ###########################
 
 # Before anything else
-GIT = "https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/Git-2.10.1-64-bit.exe"
+GIT = "https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/Git-2.10.1-32-bit.exe"
 MINGW_PRECOMPILED_BINARIES = "https://github.com/develersrl/gccwinbinaries/releases/download/v1.1/gcc-mingw-4.3.3-setup.exe"
 UNZIP = "http://stahlworks.com/dev/unzip.exe"
 
