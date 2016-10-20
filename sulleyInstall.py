@@ -85,7 +85,7 @@ os.chdir("..")
 print("Downloading WinPcap\n...")
 urllib.urlretrieve(WIN_PCAP, "WinPcap.exe")
 print("Installing WinPacap\n...\n")
-subprocess.check_call("WinPcap.exe")
+subprocess.check_call("WinPcap.exe", shell=True)
 
 # Install Impacket
 print("Downloading Impacket\n...")
