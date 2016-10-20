@@ -5,6 +5,7 @@
 import subprocess
 import urllib
 import os
+import sys
 
 ###########################
 # Dependencies for sulley #
@@ -49,7 +50,7 @@ print("Downloading unzip\n...\n")
 urllib.urlretrieve(UNZIP, "unzip.exe")
 
 # Add MinGW, Python and git to PATH
-subprocess.check_call("SET PATH=%PATH%;C:\Python27;C:\MinGW\bin;C:\Program Files\Git\cmd", shell=True)
+os.environ['PATH'] += ";C:\Python27;C:\MinGW\bin;C:\Program Files\Git\cmd"
 
 # Install pydbg
 print("Cloning pydbg\n...")
@@ -82,7 +83,7 @@ os.chdir("..")
 
 # Install WinPcap
 print("Downloading WinPcap\n...")
-urllib.urlretrieve(WIN_PCAP, "WinPcap.exe", shell=True)
+urllib.urlretrieve(WIN_PCAP, "WinPcap.exe")
 print("Installing WinPacap\n...\n")
 subprocess.check_call("WinPcap.exe")
 
